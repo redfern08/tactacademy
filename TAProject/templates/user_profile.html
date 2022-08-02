@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>Hello {{ user.username }}</p>
+{% for post in posts.all %}
+    <nav><a href="{% url 'posts:detail' post.id %}">{{ post.title }}</a></nav>
+{% endfor %}
+
+{% endblock content %}

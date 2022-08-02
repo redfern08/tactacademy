@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Post Your Stories <a href="/create/">Here!</a></h1>
+
+{% for post in post_list %}    
+    <h3>Title: {{ post.title }}</h3>
+    <p>{{ post.user_account }}</p>
+    <p>{{ post.story }}</p>
+    {% if post.photo %}
+        <img src="{{ post.photo.url }}"/>
+    {% endif %}
+{% endfor %}
+
+{% endblock content %}

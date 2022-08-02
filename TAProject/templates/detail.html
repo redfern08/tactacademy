@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="update-post">
+    <h4><em><a href="{% url 'users:profile' post.user_account.username %}">{{ post.user_account.username }}</a></em></h3>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.story }}</p>
+</div>
+
+{% if user == post.user_account %}
+    <p><a href="{% url 'posts:update' post.pk %}">Edit My Story</a></p>
+    <p><a href="{% url 'posts:delete' post.pk %}">Delete My Story</a></p>
+{% endif %}
+
+
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Hello and welcome to TactAcademy</h1>
+<h3>TactAcademy is a place for firearm owners to share their knowledge and experience in a safe 
+    and fun environment.</h3>
+<p>Please be kind and respectful of others</p>
+
+<h4>Care to share your story?</h4>
+<a href="create/">Share My Experience</a>
+
+{% for post in user.posts.all %}
+    <div class="post-viewing">
+       <h3>{{ post.title }}</h3>
+        <p>{{ post.story }}</p>
+        {% if post.photo%}
+            <img src="{{ post.photo.url }}">
+        {% endif %}
+    </div>
+{% endfor %}
+
+{% endblock content %}
