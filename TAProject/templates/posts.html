@@ -2,15 +2,19 @@
 
 {% block content %}
 
-<h1>Post Your Stories <a href="/create/">Here!</a></h1>
+<h1>Post Your Stories Here!</h1>
+<p><a href="/create/">Share a story</a></p>
 
 {% for post in post_list %}    
-    <h3>Title: {{ post.title }}</h3>
-    <p>{{ post.user_account }}</p>
-    <p>{{ post.story }}</p>
+<div class="card mx-auto border-info" style="width: 500px;" id="card">
+    <div class="card-body">
+        <h3 class="card-title">{{ post.title }}</h3>
+        <p class="card-text"><b>{{ post.user_account }}</b></p>
+        <p class="card-text">{{ post.story }}</p>
+    </div>
     {% if post.photo %}
-        <img src="{{ post.photo.url }}"/>
+        <img src="{{ post.photo.url }}" class="card-img-bottom" alt="NRA instructor logo"/>
     {% endif %}
+</div>
 {% endfor %}
-
 {% endblock content %}

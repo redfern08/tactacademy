@@ -3,10 +3,17 @@
 {% block content %}
 
 <h3>New Story</h3>
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Share Story"/>
-</form>
+    <h4>Title</h4>
+    <div>{{ form.title }}</div>
+    <h4>Story</h4>
+    <div>{{ form.story }}</div>
+    <h4>Photo</h4>
+    {{ form.photo }}<br><br>
+    <input class="btn btn-dark text-white" type="submit" value="Share Story"/>
+</form><br>
+<a href="/posts/"><input class="btn btn-dark text-white" type="reset" value="Not Now"></a>
+
 
 {% endblock content %}

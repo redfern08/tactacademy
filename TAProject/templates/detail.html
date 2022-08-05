@@ -5,12 +5,16 @@
 <div class="update-post">
     <h4><em><a href="{% url 'users:profile' post.user_account.username %}">{{ post.user_account.username }}</a></em></h3>
     <h3>{{ post.title }}</h3>
-    <p>{{ post.story }}</p>
+    <p class="border rounded fs-3 mx-auto" style="width: 50rem;">{{ post.story }}</p>
+    {% if post.photo %}
+        <img src="{{ post.photo.url }}" class="img-thumbnail" alt="NRA instructor logo"/>
+    {% endif %}
 </div>
 
+
 {% if user == post.user_account %}
-    <p><a href="{% url 'posts:update' post.pk %}">Edit My Story</a></p>
-    <p><a href="{% url 'posts:delete' post.pk %}">Delete My Story</a></p>
+    <a href="{% url 'posts:update' post.pk %}"><input type="submit" class="btn btn-dark text-white" value="Edit"></a>
+    <a href="{% url 'posts:delete' post.pk %}"><input type="submit" class="btn btn-dark text-white" value="Delete"></a>
 {% endif %}
 
 

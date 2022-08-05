@@ -6,7 +6,8 @@
 <form action="" method="post">
     {% csrf_token %}
     <p>Are you sure you wish to delete "{{ post.title }}"?</p>
-    <input type="submit" value="Confirm">
+    <input type="submit" class="btn btn-dark text-white" value="Confirm">
 </form>
+<a href="/users/{{ user.username }}"><input type="reset" class="btn btn-dark test-white" value="Cancel"></a>
 
 {% endblock content %}

@@ -2,22 +2,21 @@
 
 {% block content %}
 
-<h1>Hello and welcome to TactAcademy</h1>
-<h3>TactAcademy is a place for firearm owners to share their knowledge and experience in a safe 
-    and fun environment.</h3>
-<p>Please be kind and respectful of others</p>
-
-<h4>Care to share your story?</h4>
-<a href="create/">Share My Experience</a>
+{% comment %} <h1>Hello and welcome to TactAcademy</h1> {% endcomment %}
+<h3 class="fs-1">TactAcademy is the place for firearm owners and instructors.</h3>
+<p class="text-dark fs-2 mx-auto" style="width: 30rem;">Please be kind and respectfuL. Share your knowledge, tips and tricks
+    so that others, over time, may become proficient.
+</p>
 
 {% for post in user.posts.all %}
-    <div class="post-viewing">
-       <h3>{{ post.title }}</h3>
-        <p>{{ post.story }}</p>
-        {% if post.photo%}
-            <img src="{{ post.photo.url }}">
-        {% endif %}
+<div class="card mx-auto mt-5" style="width: 18rem;">
+    {% if post.photo%}
+        <img src="{{ post.photo.url }}" class="card-img-top">
+    {% endif %}
+    <div class="card-body">
+        <h3 class="card-title"><a href="/posts/">{{ post.title }}</a></h3>
     </div>
+</div>
 {% endfor %}
 
 {% endblock content %}

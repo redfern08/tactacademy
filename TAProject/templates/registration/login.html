@@ -2,9 +2,12 @@
 
 {% block content %}
 <h2>Log In</h2>
+<p>Log in to see stories from firearm instructors and firearm owners.</p>
+
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    <h3>Username:{{ form.username }}</h3>
+    <h3>Password:{{ form.password }}</h3>
     <button type="submit">Log In</button>
 </form>
 {% endblock %}

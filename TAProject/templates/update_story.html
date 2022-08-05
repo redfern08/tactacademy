@@ -6,7 +6,8 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Update">
-</form>
+    <input type="submit" class="btn btn-dark text-white" value="Update">
+</form><br>
+<a href="/users/{{ user.username }}"><input type="reset" class="btn btn-dark text-white" value="Cancel"></a>
 
 {% endblock content %}

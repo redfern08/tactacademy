@@ -1,0 +1,61 @@
+html, body {
+    background-color: rgb(129, 122, 99);
+    color: white;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Jost', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 18em;
+}
+
+.user-auth {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;  
+}
+
+.card {
+    width: 25em;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+input[name="title"] {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 30em;
+}
+
+input[type="file"] {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    border-radius: 15px;
+    width: 60em;
+    background-color: black;
+    color: white;
+}
+
+#signup-form {
+    display: flex;
+    background-color: black;
+}

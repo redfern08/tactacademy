@@ -8,6 +8,9 @@ class Post(models.Model):
     photo = models.ImageField(upload_to="posts_photos/", blank=True, null=True)  
     user_account = models.ForeignKey(AppUser, on_delete=models.CASCADE, related_name="posts")
 
+    class Meta:
+        ordering = ['-story']
+
     def __str__(self):
         return self.title
     
