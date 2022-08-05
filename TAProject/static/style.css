@@ -8,6 +8,7 @@ html, body {
 header {
     background-color: black;
     font-family: 'Source Code Pro', monospace;
+    padding: 1em;
 }
 
 h2, h3, h4, h5 {
