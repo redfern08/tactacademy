@@ -1,15 +1,20 @@
-# TactAcademy
+# TACT.academy
 
-TactAcademy is built for firearm owners of all skill levels to learn basic firearm skills and more advanced safety, usage and handling skills.  It is also a platform where firearm owners can share their stories whether they are out on the range, participating in shooting competitions or are avid firearm collectors, each person's story is unique.  Join us and start sharing today!
+The Armed Citizen Training academy, or TACT.academy, is designed for people who are new and experienced in the firearms world and want find quality training.  Whether they are new and building a foundation, sharpening the fundamentals or wanting to learn a new skill, TACT.academy has something for everyone.
 
 ## The App
 
-This app works as a social platform for firearm owners.  You can create posts and share images of your events or range days!  Show off your collection if you wish!  Your choices are not limited
+This app works as a social and educational platform for firearm owners.  Users will be able to post about their training experiences, share their gun builds through images or find training and events in their local areas.  
 
-## Roadmap 
-At the time of this writing, this app is in the early stages of development.  Here is a look at what I have planned for this app.
-  - Share images and posts
-  - Comment on images and have the ability to tag people
-  - Improve the app overtime
+Users will be able to select a specific catagory for them to browse through but will not be limited to that catagory, but will show the majority of selected catagory.  Catagories include the following:
 
-At this stage, I will have a basic working app but plans for future improvement and development are in order.
+- Tactical and self-defense enthusiast
+- Competition enthusiast
+- Hunting enthusiast
+- Collection enthusiast
+
+Users can use hashtags to better suit their experience for each catagory.  
+
+Users can create chat groups to link up with others to attend training or events together.
+
+The app is not limited to the United States.  Users must be 18 years old to create an account.  Parental consent must be given if under 18.  Please follow local, state and federal laws.  TACT.academy is NOT responsible for the acts of individuals.
