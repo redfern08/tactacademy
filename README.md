@@ -8,10 +8,11 @@ This app works as a social and educational platform for firearm owners.  Users w
 
 Users will be able to select a specific catagory for them to browse through but will not be limited to that catagory, but will show the majority of selected catagory.  Catagories include the following:
 
-- Tactical and self-defense enthusiast
-- Competition enthusiast
-- Hunting enthusiast
-- Collection enthusiast
+- Tactical enthusiast 
+- Self-defense
+- Competition shooter
+- Hunters
+- Firearm collector
 
 Users can use hashtags to better suit their experience for each catagory.  
 
